@@ -1,0 +1,35 @@
+* {
+    outline: none;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+div {
+    display: flexbox;
+    margin: auto;
+    width: 30%;
+}
+
+h1 {
+    font-weight: lighter;
+}
+
+.lado {
+    padding: 3px;
+    margin-top: 10px;
+    border-radius: 15px;
+    height: 25px;
+    width: 80%;
+    background-color: lightgray;
+}
+
+.btnClassificar {
+    width: 80%;
+    background-color: blue;
+    margin: 15px auto;
+    height: 35px;
+    color: white;
+    border-radius: 15px;
+}
