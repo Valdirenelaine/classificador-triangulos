@@ -14,7 +14,7 @@ function classificar() {
 
 
     } else
-    if ((lado1 == lado2) && (lado2 != lado3)) {
+    if (((lado1 == lado2) && (lado2 != lado3)) || ((lado1 == lado3) && (lado2 != lado3)) || ((lado2 == lado3) && (lado1 != lado3))) {
         document.querySelector(".resultado p").innerHTML = 'Triângulo Isósceles'
         document.getElementById("imagem").src = "img/isoceles.svg"
         document.querySelector(".resultado").style.visibility = "visible"
@@ -27,9 +27,9 @@ function classificar() {
 
     }
 
-    function limpar() {
-        document.querySelector(".resultado").style.visibility = "hidden"
+}
 
-    }
+function limpar() {
+    document.querySelector(".resultado").style.visibility = "hidden"
 
 }
