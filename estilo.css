@@ -33,3 +33,16 @@ h1 {
     color: white;
     border-radius: 15px;
 }
+
+#imagem {
+    width: 30px;
+}
+
+.resultado {
+    visibility: hidden;
+    display: flex;
+    padding: 5px;
+    width: 30%;
+    background-color: lightgreen;
+    color: white;
+}

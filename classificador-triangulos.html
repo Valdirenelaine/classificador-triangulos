@@ -11,22 +11,24 @@
 
 <body>
     <div>
-        <h1>Classificado de Triângulos</h1>
+        <h1>Classificador de Triângulos</h1>
     </div>
     <div>
-        <input id="lado1" class="lado" type="number" placeholder="Lado 1">
+        <input onchange="limpar()" id="lado1" class="lado" type="number" placeholder="Lado 1">
+    </div>
+
+    <div>
+        <input onchange="limpar()" id="lado2" class="lado" type="number" placeholder="Lado 2">
     </div>
     <div>
-        <input id="lado2" class="lado" type="number" placeholder="Lado 2">
-    </div>
-    <div>
-        <input id="lado3" class="lado" type="number" placeholder="Lado 3">
+        <input onchange="limpar()" id="lado3" class="lado" type="number" placeholder="Lado 3">
     </div>
     <div>
         <input onclick="classificar()" class="btnClassificar" type="button" value="Classificar">
     </div>
-    <div id="resultado" class="resultado">
-
+    <div class="resultado">
+        <img id="imagem" src="img/escaleno.svg" alt="icone do Triângulos">
+        <p id="mensagem"></p>
     </div>
 </body>
 
